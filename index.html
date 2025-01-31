@@ -44,42 +44,54 @@
       <main>
          <h1>Raghu Boya</h1>
          <br />
-         <span id="typing-animation"></span><br>
+		 	  <h1>
+            I am a </h1>
+         <span id="str"></span><br>
 
 						<script>
+var speed = 50;
+var speed2 = 100;
+var str = document.getElementById('str');
+var i = 0;
+var isRemoving = false;
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+var messages = [
+    "Software Developer",
+    "Pega CSSA",
+    "Oracle Developer",
+    "Alexa Skill Developer"
+]
 
-						// Create an array of typing text
-						const typingTexts = [
-						'Pega CSSA','CICD','Oracle','Alexa Skill Developer'
-						];
+function action() {
+  if (isRemoving) {
+    if (str.innerText.length > 0) {
+      str.innerText = str.innerText.substr(0, str.innerHTML.length - 1);
+      setTimeout( action, speed2 );
+      return;
+    }
+    isRemoving = false;
+    i++;
+    if (i >= messages.length) {
+      i = 0;
+    }
+    setTimeout( action, speed );
+    return;
+  }
+  var message = messages[i];
+  str.innerText = message.substr(0, str.innerHTML.length + 1);
+  if (str.innerText.length === message.length) {
+    isRemoving = true;
+  }
+  setTimeout( action, isRemoving ? speed2 : speed );
+}
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 250); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 250);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
+setTimeout( action, speed ) ;
 
 						</script> 
 						
-						<div id="particles-js"></div>
-
-<script src="particles.js"></script>
+					
+           <b> <span id="str"></span></b>
+       <br>
          <a href="mailto:contact@raghuboya.com" title="email ">contact@raghuboya.com</a>
          <br>
          <a href="tel:+1 7323978655" title="+1 732 397 8655">+1 732 397 8655</a>
