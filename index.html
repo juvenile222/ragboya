@@ -11,7 +11,7 @@
          margin: 0;
          padding: 0;
          background-color: #101010;
-         color: #ffffff;
+         color: #FCD12A;
          }
          main {
          position: relative;
@@ -30,24 +30,56 @@
          a:hover {
          text-decoration: underline;
          }
-         footer {
+   footer {
          position: relative;  
          text-align: center;
          background-color: #101010;
-         color: #ffffff;
+         color: #FCD12A;
          }
       </style>
+	
+
    </head>
    <body>
       <main>
          <h1>Raghu Boya</h1>
          <br />
-         Pega Developer
-         <br>
+         <span id="typing-animation"></span><br>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Pega CSSA','CICD','Oracle','Alexa Skill Developer'
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 250); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 250);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script> 
          <a href="mailto:raghubhp14@gmail.com" title="email ">raghubhp14@gmail.com</a>
          <br>
          <a href="tel:+1 7323978655" title="+1 732 397 8655">+1 732 397 8655</a>
-         <footer>
+      <footer>
             <strong>
             Copyright &copy; 2025 Raghu Boya, All rights reserved.
             </strong>
