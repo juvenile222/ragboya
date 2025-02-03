@@ -1,11 +1,11 @@
 // Typing effect JavaScript
-var speed = 200
+var speed = 50
 var speed2 = 400
 var str = document.getElementById("str")
 var i = 0
 var isRemoving = false
 
-var messages = ["Developer", "Pega CSSA", "Skater", "Swimmer"]
+var messages = ["Developer", "Pega CSSA", "Roller Skater", "Swimmer"]
 
 function action() {
   if (isRemoving) {
