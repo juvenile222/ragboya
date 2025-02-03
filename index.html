@@ -1,105 +1,26 @@
 <!doctype html>
 <html>
-   <head>
-      <meta charset="UTF-8" />
-      <title>Raghu Boya</title>
-      <meta name="viewport" content="width=device-width">
-      <style>
-         html, body {
-         position: relative;
-         height: 100%;
-         margin: 0;
-         padding: 0;
-         background-color: #101010;
-         color: #FFFFFF;
-         }
-         main {
-         position: relative;
-         top: 40%;
-         transform: translateY(-50%);
-         text-align: center;
-         }
-         h1 {
-         margin: 0;
-         display: inline;
-         }
-         a, a:visited {
-         color: inherit;
-         text-decoration: none;
-         }
-         a:hover {
-         text-decoration: underline;
-         }
-   footer {
-         position: relative;  
-         text-align: center;
-         background-color: #101010;
-         color: #FFFFFF;
-         }
-      </style>
-	
+  <head>
+    <meta charset="UTF-8" />
+    <title>Raghu Boya</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <main>
+      <h1>Raghu Boya</h1>
 
-   </head>
-   <body>
-      <main>
-         <h1>Raghu Boya</h1>
-         <br />
-		 	  <h1>
-            I am a </h1>
-         <span id="str"></span><br>
+      <h1>I am a <span id="str"></span></h1>
 
-						<script>
-var speed = 50;
-var speed2 = 100;
-var str = document.getElementById('str');
-var i = 0;
-var isRemoving = false;
+      <a href="mailto:contact@raghuboya.com" title="email "
+        >contact@raghuboya.com</a
+      >
+      <br />
+      <a href="tel:+1 7323978655" title="+1 732 397 8655">+1 732 397 8655</a>
+    </main>
 
-var messages = [
-    "Software Developer",
-    "Pega CSSA",
-    "Oracle Developer",
-    "Alexa Skill Developer"
-]
-
-function action() {
-  if (isRemoving) {
-    if (str.innerText.length > 0) {
-      str.innerText = str.innerText.substr(0, str.innerHTML.length - 1);
-      setTimeout( action, speed2 );
-      return;
-    }
-    isRemoving = false;
-    i++;
-    if (i >= messages.length) {
-      i = 0;
-    }
-    setTimeout( action, speed );
-    return;
-  }
-  var message = messages[i];
-  str.innerText = message.substr(0, str.innerHTML.length + 1);
-  if (str.innerText.length === message.length) {
-    isRemoving = true;
-  }
-  setTimeout( action, isRemoving ? speed2 : speed );
-}
-
-setTimeout( action, speed ) ;
-
-						</script> 
-						
-					
-           <b> <span id="str"></span></b>
-       <br>
-         <a href="mailto:contact@raghuboya.com" title="email ">contact@raghuboya.com</a>
-         <br>
-         <a href="tel:+1 7323978655" title="+1 732 397 8655">+1 732 397 8655</a>
-      <footer>
-            <strong>
-            Copyright &copy; 2025 Raghu Boya, All rights reserved.
-            </strong>
-         </footer>
-      </main>
-   </body>
+    <script src="script.js"></script>
+  </body>
+  <footer>Copyright &copy; 2025 Raghu Boya, All rights reserved.</footer>
 </html>
