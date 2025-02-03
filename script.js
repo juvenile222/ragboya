@@ -1,6 +1,6 @@
 // Typing effect JavaScript
-var speed = 50
-var speed2 = 250
+var speed = 200
+var speed2 = 400
 var str = document.getElementById("str")
 var i = 0
 var isRemoving = false
@@ -76,7 +76,7 @@ particlesScript.onload = function () {
         random: true,
         anim: {
           enable: false,
-          speed: 4,
+          speed: 3,
           size_min: 0.3,
           sync: false,
         },
