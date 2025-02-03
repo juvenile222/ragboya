@@ -51,3 +51,63 @@ footer {
   font-weight: bold;
   color: #ffdf00; /* Or #FFFFFF for white */
 }
+HTML
+
+<!doctype html>
+<html lang="en">
+<head>
+  </head>
+<body>
+  <div id="particles-js"></div>
+  <main>
+    <div class="profile-image">  <img src="path/to/your/image.jpg" alt="Raghu Boya's Profile Picture"> 
+    </div>
+    <h1>Raghu Boya</h1>
+    <p>I am a <span id="dynamic-text"></span></p>
+
+    <a href="mailto:contact@raghuboya.com">contact@raghuboya.com</a><br />
+    <a href="tel:+1 7323978655">+1 732 397 8655</a>
+
+    </main>
+  <script src="script.js"></script>
+</body>
+<footer>Copyright &copy; 2025 Raghu Boya, All rights reserved.</footer>
+</html>
+Explanation and Key Improvements:
+
+Image Placement: The <img src="path/to/your/image.jpg" alt="Raghu Boya's Profile Picture"> tag is placed before the <h1> tag, so the image will appear above the heading.
+
+Image src Attribute:  Replace "path/to/your/image.jpg" with the actual path to your image file.  This could be:
+
+A relative path (if the image is in the same directory as your HTML file or a subdirectory): e.g., "images/profile.jpg".
+An absolute path (if the image is hosted on another website): e.g., "https://www.example.com/images/profile.jpg".
+Image alt Attribute: The alt attribute is crucial for accessibility.  It provides a text description of the image for screen readers and if the image fails to load.  Make it descriptive: "Raghu Boya's Profile Picture" is a good start.
+
+Container div: The <div class="profile-image"> acts as a container for the image. This is important for styling.  We'll use CSS to control the size, positioning, and appearance of the image.
+
+CSS Styling (styles.css):
+
+Add the following CSS to your styles.css file to style the profile image:
+
+CSS
+
+.profile-image {
+  text-align: center; /* Center the image horizontally */
+  margin-bottom: 20px;  /* Add some space below the image */
+}
+
+.profile-image img {
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  border-radius: 50%; /* Make the image circular (optional) */
+  object-fit: cover; /* Prevents image distortion if aspect ratio doesn't match */
+  border: 3px solid #ddd; /* Optional border */
+}
+
+/* Example: Make the image responsive */
+@media (max-width: 768px) {
+  .profile-image img {
+    width: 100px;
+    height: 100px;
+  }
+}
