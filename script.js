@@ -5,7 +5,7 @@ var str = document.getElementById("str")
 var i = 0
 var isRemoving = false
 
-var messages = ["Software Developer", "Pega CSSA", "Roller Skater", "Swimmer"]
+var messages = ["Developer", "Pega CSSA", "Skater", "Swimmer"]
 
 function action() {
   if (isRemoving) {
@@ -42,7 +42,7 @@ particlesScript.onload = function () {
   particlesJS("particles-js", {
     particles: {
       number: {
-        value: 100,
+        value: 75,
         density: {
           enable: true,
           value_area: 800,
