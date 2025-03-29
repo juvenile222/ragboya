@@ -1,46 +1,63 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>Raghu Boya</title>
     <script>
-      if (window.location.protocol === "http:") {
-        window.location.href =
-          "https:" +
-          window.location.href.substring(window.location.protocol.length)
-      }
+        if (window.location.protocol === "http:") {
+            window.location.href =
+              "https:" +
+              window.location.href.substring(window.location.protocol.length)
+          }
     </script>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-  </head>
-  <body>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+</head>
+
+<body>
     <div id="particles-js"></div>
     <main>
-      <div class="profile-image">
-        <img
-          src="https://raw.githubusercontent.com/juvenile222/ragboya/refs/heads/main/profile%20pic.png"
-          alt="Raghu Boya's Profile Picture"
-        />
-      </div>
-      <h1>Raghu Boya</h1>
+        <div class="profile-image">
+            <img src="https://raw.githubusercontent.com/juvenile222/ragboya/refs/heads/main/profile%20pic.png" alt="Raghu Boya's Profile Picture" />
+        </div>
+        <h1>Raghu Boya</h1>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-      <h1>I am a <span id="str"></span></h1>
-
-      <a href="mailto:contact@raghuboya.com" title="email "
-        >contact@raghuboya.com</a
+        <h1>I am a <span id="str"></span></h1>
+        <div class="social-icons">
+            <span class="tooltip-container" data-tooltip="My Pega Certifications">
+          <a
+            href="https://academy.pega.com/verify-certification?email=ragboya%40cisco.com"
+            target="_blank"
+            aria-label="Pega"
+            ><i class="fa fa-product-hunt"></i></a
+        ></span>
+		<span class="tooltip-container" data-tooltip="My Impossible List">
+            <a href="https://github.com/yourgithub" target="_blank" aria-label="Impossible List"><i class="fa fa-check-square"></i
+        ></a></span>
+		<span class="tooltip-container" data-tooltip="My Linkedin">
+            <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin"></i
+        ></a></span>
+		<span class="tooltip-container" data-tooltip="My Resume">
+            <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank" aria-label="CV"><i class="fa fa-file-text-o	"></i
+        ></a></span>
+        </div>
+        <a href="mailto:contact@raghuboya.com" title="email ">contact@raghuboya.com</a
       >
       <br />
       <a href="tel:+1 7323978655" title="+1 732 397 8655">+1 732 397 8655</a>
     </main>
 
     <script src="script.js"></script>
-  </body>
-  <footer>Copyright &copy; 2025 Raghu Boya, All rights reserved.</footer>
+</body>
+<footer>Copyright &copy; 2025 Raghu Boya, All rights reserved.</footer>
+
 </html>
