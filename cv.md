@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raghu Boya - Resume</title>
     <link rel="stylesheet" href="cv<meta charset="UTF-8" />
+     <link rel="stylesheet" href="cvstyles.css" />
     <title>Raghu Boya</title>
     <script>
         if (window.location.protocol === "http:") {
