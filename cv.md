@@ -5,7 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raghu Boya - Resume</title>
-    <link rel="stylesheet" href="cvstyle.css">
+    <link rel="stylesheet" href="cv<meta charset="UTF-8" />
+    <title>Raghu Boya</title>
+    <script>
+        if (window.location.protocol === "http:") {
+            window.location.href =
+              "https:" +
+              window.location.href.substring(window.location.protocol.length)
+          }
+    </script>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    
 </head>
 
 <body>
@@ -112,9 +128,9 @@
                     <h3>Pega Senior System Architect, Cisco Systems Inc, San Jose, CA</h3>
                     <p class="dates">December 2014 – July 2016</p>
                     <ul>
-                        <li>Worked on the Sales Control Rules Engine & Sales Discount Guidance (SDG) project for Cisco Commerce Workspace (CCW).</li>
-                        <li>Implemented the SCORE decision engine, consuming REST calls and providing validation/booking responses.</li>
-                        <li>Worked on requirements gathering, Layer 7 routing, and fail-over scenarios.</li>
+                        <li>Led the Sales Control Rules Engine & Sales Discount Guidance (SDG) project for Cisco Commerce Workspace (CCW).</li>
+                        <li>Managed the SCORE decision engine, consuming REST calls and providing validation/booking responses.</li>
+                        <li>Oversaw requirements gathering, Layer 7 routing, and fail-over scenarios.</li>
                         <li>Engineered agents to run batch processes and implemented monitoring for performance and exception handling.</li>
                     </ul>
                 </div>
@@ -125,7 +141,7 @@
                     <ul>
                         <li>Developed workflows for Royal Bank of Canada (RBC) using Pega Business Process Management (BPM).</li>
                         <li>Managed the fraudulent transactions workflow for credit/debit cards.</li>
-                        <li>Worked on end-to-end integration testing and code migration.</li>
+                        <li>Led end-to-end integration testing and code migration.</li>
                     </ul>
                 </div>
 
