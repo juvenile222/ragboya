@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -30,7 +29,7 @@
             <p class="summary">
                 Experienced Pega Senior System Architect with 12+ years in Business Process Management (BPM) application development. Expertise in Pega tool and stakeholder management. Master’s degree in Computer Science. Seeking to leverage knowledge to develop web applications using Pega Rules Process Commander.
             </p>
-            <a href="RaghuBoya_resume.pdf" download class="download-link">Download Resume</a>
+           <a href="https://drive.google.com/uc?export=download&id=13xkeRB-UFBESFBQOEhE0LI-aeuXR1xfu" download class="download-link">Download Resume</a>
         </div>
 
         <div class="main-content">
