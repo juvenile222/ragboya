@@ -1,0 +1,148 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.resume-container {
+    background-color: #1e1e1e;
+    width: 900px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.top-section {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+.top-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    color: #f48fb1; /* Changed color for name - a pinkish hue */
+}
+
+.top-section .summary {
+    color: #bdbdbd;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.top-section .download-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.top-section .download-link:hover {
+    background-color: #0056b3;
+}
+
+.main-content {
+    display: flex;
+}
+
+.left-section {
+    width: 30%;
+    padding-right: 20px;
+}
+
+.right-section {
+    width: 70%;
+    padding-left: 20px;
+}
+
+.left-section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #80cbc4;
+}
+
+.right-section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #ff9800;
+}
+
+.experience-entry h3,
+.project-entry h3 {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.contact-details p,
+.education-details p {
+    margin-bottom: 10px;
+}
+
+.contact-details a {
+    color: #81d4fa;
+    text-decoration: none;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #263238;
+    color: #80cbc4;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0.9em;
+}
+
+.experience-entry,
+.project-entry {
+    margin-bottom: 20px;
+}
+
+.dates {
+    font-style: italic;
+    color: #9e9e9e;
+    margin-bottom: 10px;
+}
+
+.project-entry a {
+    color: #81d4fa;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .resume-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        padding: 0;
+    }
+
+    .left-section {
+        margin-bottom: 20px;
+    }
+}
