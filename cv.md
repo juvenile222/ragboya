@@ -1,19 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raghu Boya - Resume</title>
-    <link rel="stylesheet" href="cv<meta charset="UTF-8" />
-     <link rel="stylesheet" href="cvstyle.css" />
-    <title>Raghu Boya</title>
+    <link rel="stylesheet" href="cvstyle.css" />
     <script>
         if (window.location.protocol === "http:") {
             window.location.href =
-              "https:" +
-              window.location.href.substring(window.location.protocol.length)
-          }
+                "https:" +
+                window.location.href.substring(window.location.protocol.length)
+        }
     </script>
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -22,13 +20,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
-    
+
 </head>
 
 <body>
     <div class="resume-container">
         <div class="top-section">
-            <h1>Raghu Boya</h1>
+
             <p class="summary">
                 Experienced Pega Senior System Architect with 12+ years in Business Process Management (BPM) application development. Expertise in Pega tool and stakeholder management. Master’s degree in Computer Science. Seeking to leverage knowledge to develop web applications using Pega Rules Process Commander.
             </p>
@@ -42,7 +40,7 @@
                     <p><a href="mailto:contact@raghuboya.com">contact@raghuboya.com</a></p>
                     <p>+91 738 646 8794</p>
                     <p>Guntur, Andhra Pradesh</p>
-                    </div>
+                </div>
 
                 <h2>Skills</h2>
                 <ul class="skills-list">
@@ -149,6 +147,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
