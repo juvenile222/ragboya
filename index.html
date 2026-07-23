@@ -1,115 +1,64 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Raghu Boya | Pega Developer</title>
-    <meta
-      name="description"
-      content="Personal website of Raghu Boya, a Pega developer, roller skater, and swimmer."
-    />
-    <link rel="canonical" href="https://raghuboya.com/" />
+<html>
 
-    <meta property="og:title" content="Raghu Boya | Pega Developer" />
-    <meta
-      property="og:description"
-      content="Personal website of Raghu Boya, a Pega developer, roller skater, and swimmer."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://raghuboya.com/" />
-    <meta property="og:site_name" content="Raghu Boya" />
-    <meta
-      property="og:image"
-      content="https://raghuboya.com/profile-photo.webp"
-    />
-    <meta property="og:image:type" content="image/webp" />
-    <meta property="og:image:width" content="640" />
-    <meta property="og:image:height" content="640" />
-    <meta property="og:image:alt" content="Portrait of Raghu Boya" />
+<head>
+    <meta charset="UTF-8" />
+    <title>Raghu Boya</title>
+    <script>
+        if (window.location.protocol === "http:") {
+            window.location.href =
+              "https:" +
+              window.location.href.substring(window.location.protocol.length)
+          }
+    </script>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+</head>
 
-    <meta name="theme-color" content="#101010" />
-    <script src="/theme.js"></script>
-    <link rel="icon" href="/favicon.ico" sizes="16x16" />
-    <link
-      rel="icon"
-      href="/favicon-96x96.png"
-      type="image/png"
-      sizes="96x96"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="/apple-touch-icon.png"
-      sizes="180x180"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="stylesheet" href="/theme.css" />
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
-  <body class="home-page">
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-
-    <header class="site-header">
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="/cv/">Résumé</a>
-        <a href="/impossiblelist/">Impossible List</a>
-      </nav>
-      <button
-        class="theme-toggle"
-        type="button"
-        data-theme-toggle
-        aria-label="Switch to light theme"
-      >
-        <span class="theme-toggle-icon" aria-hidden="true"></span>
-      </button>
-    </header>
-
-    <main id="main-content" class="home-main">
-      <img
-        class="profile-photo"
-        src="/profile-photo.webp"
-        width="640"
-        height="640"
-        alt="Portrait of Raghu Boya"
-        fetchpriority="high"
-      />
-
-      <div class="intro">
+<body>
+    <div id="particles-js"></div>
+    <main>
+        <div class="profile-image">
+            <img src="https://raw.githubusercontent.com/juvenile222/ragboya/refs/heads/main/profile%20pic.png" alt="Raghu Boya's Profile Picture" />
+        </div>
         <h1>Raghu Boya</h1>
-        <p class="sr-only">
-          Developer, Pega CSSA, roller skater, and swimmer.
-        </p>
-        <p class="role-line" aria-hidden="true">
-          I am a <span id="str">Developer</span><span class="cursor"></span>
-        </p>
-      </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-      <nav class="profile-links" aria-label="Profile links">
-        <a
-          href="https://academy.pega.com/verify-certification?email=ragboya%40cisco.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Pega certifications
-        </a>
-        <a
-          href="https://www.linkedin.com/in/yourlinkedin"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
-      </nav>
-
-      <address class="contact-links">
-        <a href="mailto:contact@raghuboya.com">contact@raghuboya.com</a>
-        <a href="tel:+17323978655">+1 732 397 8655</a>
-      </address>
+        <h1>I am a <span id="str"></span></h1>
+        <div class="social-icons">
+            <span class="tooltip-container" data-tooltip="My Pega Certifications">
+          <a
+            href="https://academy.pega.com/verify-certification?email=ragboya%40cisco.com"
+            target="_blank"
+            aria-label="Pega"
+            ><i class="fa fa-product-hunt"></i></a
+        ></span>
+		<span class="tooltip-container" data-tooltip="My Impossible List">
+            <a href="https://raghuboya.com/impossiblelist" target="_blank" aria-label="Impossible List"><i class="fa fa-check-square"></i
+        ></a></span>
+		<span class="tooltip-container" data-tooltip="My Linkedin">
+            <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin"></i
+        ></a></span>
+		<span class="tooltip-container" data-tooltip="My Resume">
+            <a href="https://raghuboya.com/cv" target="_blank" aria-label="CV"><i class="fa fa-file-text-o	"></i
+        ></a></span>
+        </div>
+	      <br />  <br />
+        <a href="mailto:contact@raghuboya.com" title="email ">contact@raghuboya.com</a
+      >
+      <br />
+      <a href="tel:+1 7323978655" title="+1 732 397 8655">+1 732 397 8655</a>
     </main>
 
-    <footer class="site-footer">
-      <p>&copy; 2026 Raghu Boya. All rights reserved.</p>
-    </footer>
+    <script src="script.js"></script>
+</body>
+<footer>Copyright &copy; 2026 Raghu Boya, All rights reserved.</footer>
 
-    <script src="/script.js" defer></script>
-  </body>
 </html>
